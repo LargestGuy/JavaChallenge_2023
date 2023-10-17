@@ -19,7 +19,7 @@ public class Die {
     }
 
     public int roll(){
-        lastRoll = (int) ((Math.random()*sides-1)+1); //Stores a value between 1 and the total # of sides. Needed for getting the previous roll
+        lastRoll = (int) ((Math.random()*sides)+1); //Stores a value between 1 and the total # of sides. Needed for getting the previous roll
         return lastRoll; //Returns said value
     }
     public int readLastRoll(){ //Returns the value of the last roll if it is 0 or greater
